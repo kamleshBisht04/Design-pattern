@@ -1,141 +1,8 @@
-/* 
-
----01 TYPOGRAPHY SYSTEM ***
-
-
---FONT SIZE SYSTEM (px)
-
-10 / 12 /14 / 16/ 18 / 20/ 24/ 30/ 36/ 44/ 52/ 62/ 86/ 98
-
---Font weight:     default -- 400
-
-
-
--- Line height:
-   Default line-height   : 1;
-
-
---SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16/ 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
- 
----02  COLORS ***
-Tint and shade Generators
---heading :#C060A1
---primary : #e67e22
---Tints:  #fdf2e9
---Shades: #cf711f
---Accents:
---Greys::
- #555
- #333
- 
- -- Unsplashed images 
- -- UIFaces for user face 
-
-
- ---03 SHADOWS
-
- ---04 BORDER RADIUS 
-
-
- ---07  WHITESPACING SYSTEM 
-
- 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
-
-/*----------------------------------  CSS CODE  ---------------------------- */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font-size: 10px;    1 rem = 10px */
-  /* 10px /16px = 0.625 = 62.5% */
-  /* percentage of user's brower font-sixe setting */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-
-
-/**************************/
-/* GENRAL REUSEABLE COMPONONT SECTION */
-/**************************/
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.09;
-  color: #333;
-  letter-spacing: -0.32px;
-  margin-bottom: 3.2rem;
-}
-.heading-primary span{
-  color: #C060A1;
-}
-
-/* BUTTON CSS  */
-
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  font-size: 2rem;
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  font-weight: 600;
-  /* pust transation effect on original "state " */
-  transition: background-color 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-  color: #fff;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-  color: #555;
-  /* border: 3px solid #ffffff;  not apply */
-  /* TRICK  TO ADD BORDER INSIDE THE BUTTON*/
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-/* HELPER CLASS FOR BUTTON MARGIN */
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-
 /**************************/
 /* HEADER SECTION LOGO */
 /**************************/
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,27 +12,23 @@ header{
   padding: 0 4.8rem;
 }
 
-
-.logo{
+.logo {
   height: 3.2rem;
 }
-
-
 
 /**************************/
 /* NAVBAR SECTION  */
 /**************************/
 
-.main-nav-list{
+.main-nav-list {
   list-style-type: none;
   display: flex;
   gap: 3.2rem;
   align-items: center;
 }
 
-
-
-.main-nav-link:link,.main-nav-link:visited{
+.main-nav-link:link,
+.main-nav-link:visited {
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -174,12 +37,15 @@ header{
   display: inline-block;
 }
 
-.main-nav-link:hover,.main-nav-link:active{
-color: #cf711f;
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
 }
 
-.nav-cta:link,
-.nav-cta:visited{
+/* and selector used */
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
   padding: 1rem 2rem;
   border-radius: 9px;
   color: #fff;
@@ -189,42 +55,15 @@ color: #cf711f;
 
 /* and selector used */
 
-.main-nav-link.nav-cta:hover,.main-nav-link.nav-cta:active{
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
   background-color: #248615;
   color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************************/
 /* HERO SECTION */
 /**************************/
-
 
 .section-hero {
   background-color: #fdf2e9;
@@ -244,7 +83,6 @@ color: #cf711f;
 .hero-img {
   width: 100%;
 }
-
 
 .hero-description {
   font-size: 2rem;
@@ -286,4 +124,69 @@ color: #cf711f;
   font-weight: 700;
 }
 
+/**************************/
+/* HOW TO WORKS  SECTION */
+/**************************/
 
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  width: 35%;
+  /* z-index: 1; */
+}
+
+.step-number {
+  font-size: 8.6rem;
+  color: #eee;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.step-decription {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* way to center the text in step box-test */
+/* .step-text-box{
+  align-self: center;
+} */
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  /* height: 100px; */
+  /* hack */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+/**************************/
+/*  SECTION */
+/**************************/
