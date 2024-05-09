@@ -28,6 +28,7 @@ Tint and shade Generators
 --Tints:  #fdf2e9 /#fae5d3 /
 --Shades: #cf711f
 --button bcg -#248615;
+--icon color -#e07416
 --Accents:
 --Greys::
  #555
@@ -103,14 +104,18 @@ img {
   grid-template-columns: repeat(3, 1fr);
  
 }
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 
 
 .grid--center-v{
   align-items: center;
+}
+
+.top-margin{
+  margin-top: 9.6rem;
 }
 /* heading  */
 
@@ -133,7 +138,8 @@ img {
   color: #c060a1;
 }
 
-.heading-secondary {
+.heading-secondary,
+.meal-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
   letter-spacing: 0.50px;
