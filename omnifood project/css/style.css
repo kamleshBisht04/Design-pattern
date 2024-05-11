@@ -219,7 +219,7 @@ header {
 /**************************/
 
 .section-meal {
-  padding: 4.8rem 0;
+  padding: 4.8rem 0 2.8rem 0;
 }
 
 .meal-heading {
@@ -227,13 +227,13 @@ header {
   font-weight: 600;
   color: #cf711f;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .meal-secondary {
   text-align: center;
   color: #333;
   font-weight: 700;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.2rem;
 }
 
 .meal-img {
@@ -322,6 +322,7 @@ header {
   top: 10px;
   left: 20px;
   cursor: pointer;
+  margin-block: 1rem;
 }
 
 .suscriber:hover {
@@ -330,7 +331,6 @@ header {
 
 .diet-type {
   display: flex;
-  
 }
 
 .list-items {
@@ -356,6 +356,96 @@ header {
   fill: #cf711f;
 }
 
+.all--recipes {
+  font-size: 1.8rem;
+  text-align: center;
+  /* padding: 0 0 3.2rem 0; */
+}
+
+.link:link,
+.link:visited {
+  color: #cf711f;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
 /**************************/
 /* TESTIMONIALS SECTION */
+/**************************/
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 9.6rem ;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+  word-spacing: -0.3px;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  margin-left: 10rem;
+}
+.testimonials-container h2 {
+  margin-bottom: 4.8rem;
+}
+
+/*  gallery section css  */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: all 0.6s;
+  border-radius: 15px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/**************************/
+/* PRICE SECTION */
 /**************************/
