@@ -447,5 +447,137 @@ header {
 }
 
 /**************************/
-/* PRICE SECTION */
+/* PRICING SECTION */
 /**************************/
+
+.section-pricing{
+  padding: 9.6rem ;
+}
+
+.pricing-plan-grid{
+   display: flex;
+   justify-content: center;
+   gap: 8rem;
+}
+
+.pricing-plan{
+  height: 55rem;
+  width: 39rem;
+  padding: 3.2rem 3.6rem;
+  border: 3px solid #fdf2e9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 0;
+}
+
+.plan-name{
+ font-size: 2rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ color:#e07416;
+ margin-bottom: 2.8rem;
+}
+
+.plan-price{
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.plan-price span{
+  font-size: 5.2rem;
+  margin-left: 0.5rem;
+}
+.plan-text{
+  font-size: 1.8rem;
+  margin-block: 1.8rem;
+  font-weight: 500;
+}
+.list{
+ margin-block: 1.2rem;
+ display: flex;
+ flex-direction: column;
+ gap: 1.8rem;
+ 
+}
+
+.list-item{
+list-style-type: none;
+font-size: 1.8rem;
+display: flex;
+align-items: center;
+gap: 1rem;
+
+}
+
+.list-icon{
+color: #e07416;
+font-size: 2.8rem;
+font-weight: 600;
+}
+
+.plan-sing-up{
+margin-top: 5rem;
+}
+.plan-sing-up a:hover{
+  background-color: #248615;
+}
+
+.plan-complete{
+  background-color: #e9fac8;
+}
+
+.plan-complete{
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-complete::after{
+ content: "Best value";
+ position: absolute;
+ top: 6%;
+ right: -18%;
+ transform: rotate(45deg);
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ font-weight: 700;
+ background-color: #fbd034;
+ padding: 0.8rem 8rem;
+ color: #333;    
+}
+
+/* plan detalils */
+.plan-details{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 4.8rem;
+  text-align: center;
+}
+
+/* feature section  */
+
+.feature-icon{
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  color: #cf711f;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title{
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.feature-text{
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+}
+
