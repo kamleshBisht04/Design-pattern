@@ -38,7 +38,8 @@ Tint and shade Generators
  -- UIFaces for user face 
  -- Letter spacing -- 0.75px / 0.50px /
 
- ---03 SHADOWS
+ ---03 SHADOWS  
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
  ---04 BORDER RADIUS 
    by default --9px
