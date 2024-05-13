@@ -23,11 +23,12 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="logo"
-        src="./img/omnifood-logo.png"
-        alt="omnifood-logo images"
-      />
+      <a href="#">
+        <img
+          class="logo"
+          src="./img/omnifood-logo.png"
+          alt="omnifood-logo images"
+      /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">How it works</a></li>
@@ -701,33 +702,43 @@
                 first meal is on us!
               </p>
               <form class="cta-from" action="#">
-              <div>
-                <label for="full-Name">Full Name</label>
-                <input id="full-Name" type="text" placeholder="Enter your name ?" required>
-              </div>
+                <div>
+                  <label for="full-Name">Full Name</label>
+                  <input
+                    id="full-Name"
+                    type="text"
+                    placeholder="Enter your name ?"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label for="email">Email Adress</label>
-                <input id="email" type="email" placeholder="me@example.com" required>
-              </div>
+                <div>
+                  <label for="email">Email Adress</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label for="select-where">Where did you hear from India? </label>
-                <select id="select-where" required >
-                  <option value>Please select your city ?</option>
-                  <option value="city">New Delhi</option>
-                  <option value="city">Noida</option>
-                  <option value="city">Dehradun</option>
-                  <option value="city">Harayana</option>
-                  <option value="city">Saket</option>
-                  <option value="city">Almore</option>
-                </select>
-              </div>
-              
-              <button class="btn--full btn--from">Sign up now</button>
-              
+                <div>
+                  <label for="select-where"
+                    >Where did you hear from India?
+                  </label>
+                  <select id="select-where" required>
+                    <option value>Please select your city ?</option>
+                    <option value="city">New Delhi</option>
+                    <option value="city">Noida</option>
+                    <option value="city">Dehradun</option>
+                    <option value="city">Harayana</option>
+                    <option value="city">Saket</option>
+                    <option value="city">Almore</option>
+                  </select>
+                </div>
+
+                <button class="btn--from">Sign up now</button>
               </form>
-
             </div>
             <div
               class="cta-img-box"
@@ -737,6 +748,80 @@
           </div>
         </div>
       </section>
+      <!-- call to action ends -->
     </main>
+    <footer class="footer ">
+      <div class="container grid--footer">
+        <div class="logo-col">
+          <a class="footer-logo" href="#">
+            <img
+              class="logo"
+              src="./img/omnifood-logo.png"
+              alt="omnifood-logo images"
+          /></a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+              <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            &copy; 2024 by Omnifood,Inc <br> All rigits reserved.
+          </p>
+        </div>
+        <div class="Address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="address">
+            <p>623 Harrison St.,2nd Floor,<br>San Francisco,CA 94107</p>
+          </address>
+            <div class="contacts">
+            <a href="tel:+917895709188">+917895709188</a><br />
+            <a href="mailto:hello@omnifoodcom">hello@omnifood.com</a>
+            </div>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a href="#">Create Account</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">iOS app</a></li>
+            <li><a href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a href="#">About Omnifood</a></li>
+            <li><a href="#">For Business</a></li>
+            <li><a href="#">Cooking partners</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a href="#">Recipe directory</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

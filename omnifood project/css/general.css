@@ -109,6 +109,8 @@ img {
   margin-top: 9.6rem;
 }
 
+
+
 .grid--center-v{
   align-items: center;
 }
@@ -208,6 +210,23 @@ img {
   /* TRICK  TO ADD BORDER INSIDE THE BUTTON*/
   box-shadow: inset 0 0 0 3px #fff;
 }
+
+/* Call to Acton Section  */
+
+.cta-from .btn--from{
+  height: 5rem;
+  font-weight: 500;
+  color: #fff;
+  align-self: self-end;
+  background-color: #45260a;
+}
+
+.cta-from .btn--from:hover{
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
 
 /* HELPER CLASS FOR BUTTON MARGIN */
 .margin-right-sm {
