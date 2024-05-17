@@ -15,7 +15,7 @@
 
 -- Line height:
    Default line-height   : 1;
-          line-height :1.05 // 1.6 //
+          line-height :1.05 // 1.6 // 1.8
 
 
 --SPACING SYSTEM (px)
@@ -39,7 +39,7 @@ Tint and shade Generators
  -- Letter spacing -- 0.75px / 0.50px /
 
  ---03 SHADOWS  
- box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); 
 
  ---04 BORDER RADIUS 
    by default --9px
