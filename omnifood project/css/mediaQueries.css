@@ -1,0 +1,76 @@
+/* 
+rem and em dosn't depend upon html font size in media Queries!
+Instead, 1rem = 1em = 16px;
+*/
+
+/**************************/
+/* Below 1344px for smaller desktops = 1350/16 */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  /* .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+}
+
+/**************************/
+/* Below 1200px for Tablet Landscape  1200/16=75em  */
+/**************************/
+
+@media(max-width:75em){
+  
+  html{
+    /* 9px = 9/16 =56.25% */
+    font-size: 56.25%;
+  }
+
+  .heading-secondary{
+    font-size: 3.6rem;
+  }
+  
+  .heading-tertiary{
+    font-size: 2.4rem;
+  }
+  
+  .testimonials-container{
+    padding: 3.2rem 3.6rem;
+  }
+
+  .grid {
+  row-gap: 6.4rem;
+  column-gap: 4.8rem;
+}
+
+.hero{
+  gap: 4.8rem;
+}
+
+.main-nav-list{
+  gap: 3.2rem;
+}
+}
+
+
+
+
+/* 
+---07  WHITESPACING SYSTEM 
+
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--FONT SIZE SYSTEM (px)
+
+10 / 12 /14 / 16/ 18 / 20/ 24/ 30/ 36/ 44/ 52/ 62/ 86/ 98
+
+--SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16/ 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+*/
