@@ -75,6 +75,7 @@ Instead, 1rem = 1em = 16px;
     font-size: 53%;
   }
 
+
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -85,6 +86,7 @@ Instead, 1rem = 1em = 16px;
 
   .hero {
     column-gap: 6.8rem;
+
   }
 
   .section-call-to-Action {
@@ -112,10 +114,17 @@ Instead, 1rem = 1em = 16px;
     gap: 6.4rem;
   }
 
+   .section-hero{
+   padding-top: 1.8rem;
+  }
+
   .hero-text-box,
   .hero-imge-box {
     text-align: center;
   }
+  /* .section-hero{
+    margin-top: 6rem;
+  } */
 
   .hero-img {
     width: 55%;
@@ -184,6 +193,10 @@ Instead, 1rem = 1em = 16px;
     display: block;
     z-index: 9999;
   }
+
+  /* .section-hero{
+    margin-top: 6.4rem;
+  } */
 
   .main-nav {
     background-color: rgba(255, 255, 255, 0.97);
@@ -266,7 +279,6 @@ Instead, 1rem = 1em = 16px;
   .grid--footer {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 4.8rem;
-    
   }
 
   .logo-col,
@@ -283,7 +295,6 @@ Instead, 1rem = 1em = 16px;
   }
 }
 
-
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
@@ -291,7 +302,8 @@ Instead, 1rem = 1em = 16px;
 @media (max-width: 34em) {
   .grid--2-cols,
   .grid--3-cols,
-  .grid--4-cols {
+  .grid--4-cols,
+  .testimonials {
     grid-template-columns: 1fr;
   }
 
@@ -305,7 +317,7 @@ Instead, 1rem = 1em = 16px;
 
   .section-hero {
     background-color: #fdf2e9;
-    padding: 2.4rem 0 6.4rem 0;
+    padding: 4.2rem 0 6.4rem 0;
   }
 
   .btn,
@@ -333,8 +345,6 @@ Instead, 1rem = 1em = 16px;
     transform: translateY(3rem);
   }
 
-  
-  
   .section-testimonials {
     padding: 4.2rem 3.2rem;
   }
@@ -372,13 +382,16 @@ Instead, 1rem = 1em = 16px;
   .cta .heading-secondary {
     margin-bottom: 2.4rem !important;
   }
-  .testimonials-container{
+  .testimonials-container {
     padding: 3.2rem 1rem;
   }
 
   .grid--4-cols {
     margin-top: 2.8rem;
-  } 
+  }
+  .container{
+    padding:  0 3.2rem;
+  }
 
 }
 
