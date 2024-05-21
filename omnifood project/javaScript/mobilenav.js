@@ -17,3 +17,8 @@ btnNavEl.addEventListener("click",function(){
   headerEl.classList.toggle("nav-open");
 });
 
+
+///////////////////////////////////////////////////////////
+// Make smooth scrolling  and  join the section (Bookmark to section)
+
+
