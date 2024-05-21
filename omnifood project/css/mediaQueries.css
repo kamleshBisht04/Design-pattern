@@ -170,7 +170,7 @@ Instead, 1rem = 1em = 16px;
 }
 
 /**************************/
-/* BELOW 800px smaller tablests  (Tablets) */
+/* BELOW 816px smaller tablests  (Tablets) */
 /* MOBILE NAVIGATION */
 /**************************/
 
@@ -194,40 +194,37 @@ Instead, 1rem = 1em = 16px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
-     /* HIDING THE NAVIGATION */
-     /* display: none; */
-     /* allowes no transiton at all */
+    /* HIDING THE NAVIGATION */
+    /* display: none; */
+    /* allowes no transiton at all */
 
-     /* Trick to show and the navigation 
+    /* Trick to show and the navigation 
      1) hide the component visually */
-     opacity: 0;
-     /* 2) make it unaccessible to mouse and keyboard */
-     pointer-events: none;
-     /* 3) Hide from screen Reader */
-     visibility: hidden;
+    opacity: 0;
+    /* 2) make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide from screen Reader */
+    visibility: hidden;
 
-     /* transition property */
-     transition: all 0.8s ease-in;
-     transform: translateX(100%);
-
+    /* transition property */
+    transition: all 0.8s ease-in;
+    transform: translateX(100%);
   }
-  
-  .nav-open .main-nav{
+
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
-    
   }
-   
-.nav-open .icon-mobile-nav[name="close"]{
-  display: block;
-}
 
-.nav-open .icon-mobile-nav[name="menu"]{
-  display: none;
-}
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
 
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
 
   .main-nav-list {
     flex-direction: column;
@@ -240,9 +237,147 @@ Instead, 1rem = 1em = 16px;
     font-size: 3rem;
   }
 
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.5rem 4rem;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet-section {
+    grid-column: 1 /-1;
+    justify-self: center;
+  }
+  .section-meal {
+    padding-inline: 3.2rem;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem !important;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4.8rem;
+    
+  }
+
+  .logo-col,
+  .Address-col {
+    grid-column: span 3;
+    /* justify-self: center; */
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+    /* justify-self: center; */
+  }
+}
 
 
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
 
+@media (max-width: 34em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    background-color: #fdf2e9;
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.8rem 1.8rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .fearture-logo img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(3rem);
+  }
+
+  
+  
+  .section-testimonials {
+    padding: 4.2rem 3.2rem;
+  }
+
+  .testimonial-name {
+    margin-left: 12.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+  }
+
+  .gallery-item img,
+  .gallery-item {
+    border-radius: 5px;
+  }
+
+  .pricing-plan-grid {
+    flex-direction: column;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .section-call-to-Action {
+    padding: 0;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta .heading-secondary {
+    margin-bottom: 2.4rem !important;
+  }
+  .testimonials-container{
+    padding: 3.2rem 1rem;
+  }
+
+  .grid--4-cols {
+    margin-top: 2.8rem;
+  } 
 
 }
 

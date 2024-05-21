@@ -738,7 +738,7 @@ color: #333;
   color:#343a40;
 }
 
-.Addres-col,.nav-col{
+.Address-col,.nav-col{
   display: flex;
   flex-direction: column;
 }
