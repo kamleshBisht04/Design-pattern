@@ -328,6 +328,7 @@ Instead, 1rem = 1em = 16px;
 
   .hero-img {
     width: 80%;
+    height: 80%;
   }
 
   .fearture-logo img {
