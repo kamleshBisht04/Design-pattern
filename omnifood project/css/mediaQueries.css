@@ -75,7 +75,6 @@ Instead, 1rem = 1em = 16px;
     font-size: 53%;
   }
 
-
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -86,7 +85,6 @@ Instead, 1rem = 1em = 16px;
 
   .hero {
     column-gap: 6.8rem;
-
   }
 
   .section-call-to-Action {
@@ -95,6 +93,14 @@ Instead, 1rem = 1em = 16px;
 
   .container {
     padding: 0 4.8rem;
+  }
+  .fearture-container {
+    gap: 4.2rem;
+    padding: 1.8rem 6.4rem;
+  }
+
+  .testimonial-name {
+    margin-left: 5rem;
   }
 }
 
@@ -114,8 +120,8 @@ Instead, 1rem = 1em = 16px;
     gap: 6.4rem;
   }
 
-   .section-hero{
-   padding-top: 1.8rem;
+  .section-hero {
+    padding-top: 1.8rem;
   }
 
   .hero-text-box,
@@ -128,6 +134,16 @@ Instead, 1rem = 1em = 16px;
 
   .hero-img {
     width: 55%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-marquee {
+    max-width: 65rem;
+    margin-left: 20%;
+  }
+  .fearture-container {
+    gap: 1.2rem;
+    padding: 1.8rem 2.4rem;
   }
 
   .delivered-meals {
@@ -199,14 +215,17 @@ Instead, 1rem = 1em = 16px;
   } */
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: #d8f5cc;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100dvh;
+    height: 110dvh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
     /* align-items: center; */
     /* HIDING THE NAVIGATION */
     /* display: none; */
@@ -225,6 +244,19 @@ Instead, 1rem = 1em = 16px;
     transform: translateX(100%);
   }
 
+  .main-nav-list {
+    flex-direction: column;
+  }
+
+  .main-nav .mobile-order {
+    display: block;
+    font-weight: 600;
+  }
+
+  .header .desktop-order {
+    display: none;
+  }
+
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
@@ -232,15 +264,7 @@ Instead, 1rem = 1em = 16px;
     transform: translateX(0);
   }
 
-  .nav-open .icon-mobile-nav[name="close"] {
-    display: block;
-  }
-
-  .nav-open .icon-mobile-nav[name="menu"] {
-    display: none;
-  }
-
-  .main-nav-list {
+  .desktop-order {
     flex-direction: column;
     padding: 9.6rem;
     gap: 4.8rem;
@@ -293,6 +317,18 @@ Instead, 1rem = 1em = 16px;
     margin-bottom: 3.2rem;
     /* justify-self: center; */
   }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .fearture-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.2rem;
+    column-gap: 8.2rem;
+    margin-inline: 6.2rem;
+    padding-inline: 8.2rem;
+  }
 }
 
 /**************************/
@@ -313,10 +349,18 @@ Instead, 1rem = 1em = 16px;
 
   .hero {
     padding: 0 3.2rem;
+    /* background-color: #d8f5cc; */
+  }
+  .header {
+    height: 7.2rem;
   }
 
   .section-hero {
-    background-color: #fdf2e9;
+    background: linear-gradient(
+      180deg,
+      rgba(196, 232, 180, 0.43) -32.94%,
+      rgba(216, 245, 204, 0) 99.61%
+    );
     padding: 4.2rem 0 6.4rem 0;
   }
 
@@ -327,8 +371,23 @@ Instead, 1rem = 1em = 16px;
   }
 
   .hero-img {
-    width: 80%;
-    height: 80%;
+    width: 84%;
+    height: 84%;
+  }
+
+  .hero-marquee {
+    margin-inline: 4rem;
+  }
+  .all--recipes {
+    font-size: 1.6rem;
+  }
+
+  .fearture-container {
+    grid-template-columns: 1fr;
+    padding-left: 3.2rem;
+  }
+  .feature-text {
+    width: 32rem;
   }
 
   .fearture-logo img {
@@ -390,9 +449,43 @@ Instead, 1rem = 1em = 16px;
   .grid--4-cols {
     margin-top: 2.8rem;
   }
-  .container{
-    padding:  0 3.2rem;
+  .container {
+    padding: 0 3.2rem;
   }
+    .grid--footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1.5fr);
+    column-gap: 4.8rem;
+}
+}
+
+/**************************/
+/* BELOW 384px (Phones) */
+/**************************/
+
+@media (max-width: 24em) {
+  .btn--full:link,
+  .btn--full:visited {
+    margin-bottom: 2rem;
+  }
+  .hero-img {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .fearture-container {
+
+  padding-left: 3.2rem;
+}
+.feature-text {
+    width: 20rem;
+  }
+ .cta-text-box {
+    padding: 1.4rem 1.7rem 2.2rem 1.7rem;
+  }
+
+
+
 
 }
 

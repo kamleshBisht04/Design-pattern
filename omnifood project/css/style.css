@@ -33,6 +33,7 @@ header {
   align-items: center;
   background-color: #d8f5cc;
   border-radius: 2.5rem;
+  margin-top: 1rem;
 }
 .main-nav-list a {
   padding: 1.2rem;
@@ -63,9 +64,20 @@ header {
   padding: 1rem 2rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #2d8404;
+  background-color: #42901d;
   font-size: 1.8rem;
 }
+
+.desktop-order{
+  display: block;
+}
+
+.main-nav .mobile-order{
+  display: none;
+  width: fit-content;
+}
+
+
 
 /* and selector used */
 
@@ -182,6 +194,115 @@ header {
   font-weight: 700;
 }
 
+/* hero marquee */
+
+.hero-marquee {
+  max-width: 50rem;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 10%;
+}
+
+.meal-types-list {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  border-radius: 10%;
+}
+
+.marquee-animation {
+  animation: marquee 10s infinite alternate;
+}
+
+.marquee-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.paleo {
+  background: #eed374;
+}
+
+.vegan {
+  background: #64dc77;
+}
+
+.gluten {
+  background: #d7beff;
+}
+
+.lactose {
+  background: #e8c2d4;
+}
+
+.pesca {
+  background: #c2e1e8;
+}
+
+.vegetarian {
+  background: #82ae8e;
+}
+
+.keto {
+  background: #cec99e;
+}
+
+.fodmap {
+  background: #ffa9a9;
+}
+
+.kid {
+  background: #f39f52;
+}
+
+.meal-types-list li {
+  display: inline;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50px;
+  margin: 0.5rem;
+}
+
+/* HERO BUTTONS  + GENERAL BUTTON STYLING */
+.hero-buttons {
+  margin-top: 4rem;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 1rem 5rem;
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  font-weight: 400;
+  transition: all 150ms ease-in-out;
+}
+
+.outline-btn {
+  background: white;
+  box-shadow: inset 0 0 0 2px #379e0a;
+}
+
+.outline-btn:hover {
+  background: #5db935bb;
+  box-shadow: none;
+}
+
+.solid-btn {
+  background: #379e0a;
+  color: whitesmoke;
+}
+
+.solid-btn:hover {
+  background: #226c02;
+}
+
 /**************************/
 /* HOW TO WORKS  SECTION */
 /**************************/
@@ -260,8 +381,9 @@ header {
 
 .fearture-logo img {
   height: 3.2rem;
-  filter: brightness(0);
-  opacity: 50%;
+  /* filter: brightness(0); */
+  /* filter: brightness(30%); */
+  opacity: 90%;
 }
 .heading-fearture-in {
   font-size: 1.5rem;
@@ -441,27 +563,39 @@ header {
 /**************************/
 
 .section-testimonials {
-  background: linear-gradient(180deg, #eef9e9 0%, rgba(255, 255, 255, 0.28) 100%);
+  background: linear-gradient(
+    180deg,
+    #eef9e9 0%,
+    rgba(255, 255, 255, 0.28) 100%
+  );
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
 }
 .testimonials-container {
-  padding: 9.6rem;
+  padding: 3.2rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 4.8rem;
+  row-gap: 3.2rem;
   column-gap: 8rem;
   word-spacing: -0.3px;
 }
 
+.testimonial {
+  border: 0;
+  padding: 1.2rem 3.2rem;
+  background: #f7fff4;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);
+}
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.6rem;
+  border: 3.5px solid #d5e6cd;
 }
 
 .testimonial-text {
@@ -473,7 +607,7 @@ header {
 .testimonial-name {
   font-size: 1.6rem;
   color: #6f6f6f;
-  margin-left: 10rem;
+  margin-left: 8rem;
 }
 .testimonials-container h2 {
   margin-bottom: 4.8rem;
@@ -577,12 +711,23 @@ header {
 .plan-sing-up {
   margin-top: 5rem;
 }
+
+.btn-sing-up {
+  background-color: #0f170b;
+  color: #fff;
+}
+
+.btn--complete {
+  background-color: #379e0a;
+  color: #fff;
+}
+
 .plan-sing-up a:hover {
-  background-color: #248615;
+  background-color: #276f07;
 }
 
 .plan-complete {
-  background-color: #e9fac8;
+  background-color: #d8f5cc;
   border: 2px solid #008000;
 }
 
@@ -616,17 +761,20 @@ header {
 /* feature section  */
 
 .feature-icon {
-  height: 3.2rem;
-  width: 3.2rem;
-  background-color: #fdf2e9;
+  height: 2.8rem;
+  width: 2.8rem;
+  /* background-color: #fdf2e9; */
+  background-color: #d5e6cd;
   padding: 1.6rem;
   border-radius: 50%;
-  color: #cf711f;
-  margin-bottom: 3.2rem;
+  /* color: #cf711f; */
+  color: #42901d;
+
+  margin-bottom: 2rem;
 }
 
 .feature-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #333;
   font-weight: 700;
   margin-bottom: 2.4rem;
@@ -636,6 +784,16 @@ header {
   font-size: 1.8rem;
   line-height: 1.6;
   color: #333;
+  width: 25rem;
+}
+
+.fearture-container {
+  display: grid;
+  gap: 8.2rem;
+  background: #fafff9;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.8rem 8.2rem;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.076);
 }
 
 /**************************/
@@ -661,7 +819,7 @@ header {
 }
 
 .cta-img-box {
-      background-image: linear-gradient(
+  background-image: linear-gradient(
       to right bottom,
       rgba(66, 144, 29, 0.25),
       rgba(45, 134, 4, 0.25)

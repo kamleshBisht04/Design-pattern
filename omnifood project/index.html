@@ -45,17 +45,23 @@
           <li><a class="main-nav-link" href="#meal">Meals</a></li>
           <li><a class="main-nav-link" href="#testimonial">Testimonials</a></li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-        </ul>
-      </nav>
+          </ul>
 
-      <div>
-        <a class="main-nav-link nav-cta" href="#cta">
+          <a class="main-nav-link mobile-order nav-cta" href="#cta">
           <span
             ><ion-icon class="order-icon" name="bag-handle-outline"></ion-icon
           ></span>
-          Order Today</a
-        >
-      </div>
+          Order Today</a>
+        
+      </nav>
+
+        <a class="main-nav-link desktop-order nav-cta" href="#cta">
+          <span
+            ><ion-icon class="order-icon" name="bag-handle-outline"></ion-icon
+          ></span>
+          Order Today</a>
+      
+      
 
       <button class="btn-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
@@ -118,14 +124,41 @@
           <div class="hero-imge-box">
             <img
               class="hero-img"
-              src="./img/hero.png"
+              src="./hero.png"
               height="512px"
               width="520px"
               alt="women enjoying food,meals in the storage container,and food bowls on the table"
             />
           </div>
-        </div>
+            </div>
+
+               <div class="hero-marquee">
+							<ul class="meal-types-list marquee-animation">
+								<li class="paleo">Paleo</li>
+								<li class="vegan">Vegan</li>
+								<li class="gluten">Gluten-Free</li>
+								<li class="lactose">Lactose-Free</li>
+								<li class="pesca">Pescatarian</li>
+								<li class="vegetarian">Vegetarian</li>
+								<li class="keto">Keto</li>
+								<li class="fodmap">Low FODMAP</li>
+								<li class="kid">Kid-Friendly</li>
+								<li class="paleo">Paleo</li>
+								<li class="vegan">Vegan</li>
+								<li class="gluten">Gluten-Free</li>
+								<li class="lactose">Lactose-Free</li>
+								<li class="pesca">Pescatarian</li>
+								<li class="vegetarian">Vegetarian</li>
+								<li class="keto">Keto</li>
+								<li class="fodmap">Low FODMAP</li>
+								<li class="kid">Kid-Friendly</li>
+							</ul>
+						</div>
+
+
       </section>
+
+
       <!-- hero section end -->
 
       <section class="section-fearture-In">
@@ -516,6 +549,30 @@
               </blockquote>
               <p class="testimonial-name">&mdash; Hannah Smith</p>
             </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Jonathan Mendez"
+                src="img/customers/customer-4.jpg"
+              />
+              <blockquote class="testimonial-text">
+               Omnifood saves me so much time now that I don’t have to plan and prep all my meals. I’ve loved every recipe so far!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Jonathan Mendez</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Stephanie Brown"
+                src="img/customers/customer-1.jpg"
+              />
+              <blockquote class="testimonial-text">
+               Omnifood is worth every penny. Accurate at getting me meals that I love (and I’m a picky eater) so I’m hooked!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Stephanie Brown</p>
+            </figure>
           </div>
         </div>
 
@@ -642,7 +699,7 @@
               </li>
             </ul>
             <div class="plan-sing-up">
-              <a class="btn btn--full" href="">Start eating well</a>
+              <a class="btn btn-sing-up" href="">Start eating well</a>
             </div>
           </div>
           <!-- pricing plan 1 end -->
@@ -670,9 +727,11 @@
               </li>
             </ul>
             <div class="plan-sing-up">
-              <a class="btn btn--full" href="">Start eating well</a>
+              <a class="btn btn--complete" href="">Start eating well</a>
             </div>
           </div>
+          <!-- pricing plan 2 ends -->
+
         </div>
 
         <div class="container grid">
@@ -683,41 +742,46 @@
         </div>
         <!-- price details section ends -->
 
-        <div class="container grid grid--4-cols">
+        <div class="containers">
+          <div class="fearture-container ">
           <div class="feature">
-            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-            <p class="feature-title">Never cook again!</p>
-            <p class="feature-text">
-              Our subscriptions cover 365 days per year, even including major
-              holidays.
-            </p>
-          </div>
+              <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+              <p class="feature-title">Never cook again!</p>
+              <p class="feature-text">
+                Our subscriptions cover 365 days per year, even including major
+                holidays.
+              </p>
+            </div>
 
-          <div class="feature">
-            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
-            <p class="feature-title">Local and organic</p>
-            <p class="feature-text">
-              Our cooks only use local, fresh, and organic products to prepare
-              your meals.
-            </p>
-          </div>
+            <div class="feature">
+              <ion-icon
+                class="feature-icon"
+                name="nutrition-outline"
+              ></ion-icon>
+              <p class="feature-title">Local and organic</p>
+              <p class="feature-text">
+                Our cooks only use local, fresh, and organic products to prepare
+                your meals.
+              </p>
+            </div>
 
-          <div class="feature">
-            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
-            <p class="feature-title">No waste</p>
-            <p class="feature-text">
-              All our partners only use reusable containers to package all your
-              meals.
-            </p>
-          </div>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+              <p class="feature-title">No waste</p>
+              <p class="feature-text">
+                All our partners only use reusable containers to package all
+                your meals.
+              </p>
+            </div>
 
-          <div class="feature">
-            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
-            <p class="feature-title">Pause anytime</p>
-            <p class="feature-text">
-              Going on vacation? Just pause your subscription, and we refund
-              unused days.
-            </p>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+              <p class="feature-title">Pause anytime</p>
+              <p class="feature-text">
+                Going on vacation? Just pause your subscription, and we refund
+                unused days.
+              </p>
+            </div>
           </div>
         </div>
       </section>
